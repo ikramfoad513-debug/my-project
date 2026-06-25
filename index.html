@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+
+        }
+
+        body {
+            background: #121212;
+            color: white;
+        }
+
+        header {
+            background: #1e1e1e;
+            padding: 20px;
+            text-align: center;
+
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+
+        }
+
+        .hero {
+            text-align: center;
+            padding: 80p 20px;
+        }
+
+        .hero h1 {
+            font-size: 50px;
+        }
+
+        .hero p {
+            margin-top: 15px;
+            color: #ccc;
+        }
+
+        section {
+            padding: 50px 10px;
+        }
+
+        .skills {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+        }
+
+        .skill {
+            background: #222;
+            padding: 20px;
+            border-radius: 10;
+            text-align: center;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .project {
+            background: #222;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .contact form {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        input,
+        textarea {
+            padding: 10px;
+            border: none;
+        }
+
+        button {
+            padding: 10px;
+            background: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 7px;
+            cursor: pointer;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: #1e1e1e;
+        }
+    </style>
+
+    <title>my profile</title>
+</head>
+<body>
+
+<header>
+    <h2>My Portfolio</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero">
+    <h1>Mohammed Baher</h1>
+    <p>Web Developer & Python Programmer</p>
+</section>
+
+<section id="about">
+    <h2>About Me</h2>
+    <br>
+    <p>
+        I am a passionate programmer learning web development,
+        Python, and software engineering. I enjoy building projects
+        and improving my skills every day.
+    </p>
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+    <br>
+    <div class="skills">
+        <div class="skill">HTML</div>
+        <div class="skill">CSS</div>
+        <div class="skill">JavaScript</div>
+        <div class="skill">Python</div>
+        <div class="skill">GitHub</div>
+        <div class="skill">Linux</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <br>
+
+    <div class="projects">
+
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>Personal website showcasing my skills and projects.</p>
+        </div>
+
+        <div class="project">
+            <h3>Search App</h3>
+            <p>Python search application with user input.</p>
+        </div>
+
+        <div class="project">
+            <h3>OpenCV Project</h3>
+            <p>Computer vision project using Python and OpenCV.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Me</h2>
+    <br>
+
+    <form>
+        <input type="text" placeholder="Your Name">
+        <input type="email" placeholder="Your Email">
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    <p>© 2026 Mohammed Baher - All Rights Reserved</p>
+</footer>
+
+</body>
+</html>
